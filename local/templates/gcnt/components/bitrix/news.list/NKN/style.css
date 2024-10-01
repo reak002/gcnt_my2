@@ -1,0 +1,97 @@
+.news_wrapper {
+  width: var(--main-width);
+}
+.news_wrapper .news_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  list-style: none;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .news_list ul {
+    flex-wrap: wrap;
+  }
+}
+.news_wrapper .news_list ul li {
+  list-style: none;
+  flex: 1 1 calc(100% / 3 - 40px);
+  max-width: calc(100% / 3 - 40px);
+}
+@media (max-width: 1120px) {
+  .news_wrapper .news_list ul li {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.news_wrapper .block_title {
+  font: normal 700 44px/42px "Candara", sans-serif;
+  margin-bottom: 35px;
+}
+.news_wrapper .one_new {
+  position: relative;
+}
+.news_wrapper .one_new .visible_place {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.news_wrapper .one_new .visible_place .img_wrapper {
+  position: relative;
+}
+.news_wrapper .one_new .visible_place .img_wrapper > img.preview_picture {
+  max-width: 100%;
+  width: auto;
+  height: 200px;
+  max-height: 200px;
+  margin: auto;
+}
+.news_wrapper .one_new .visible_place .img_wrapper > .type_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 20px);
+  padding: 20px 10px;
+  gap: 10px;
+  flex-wrap: wrap-reverse;
+}
+.news_wrapper .one_new .visible_place .img_wrapper > .type_list .one_type {
+  flex: 1 1 calc(50% - 35px);
+  background: var(--main-color);
+  color: #fff;
+  padding: 0 15px;
+  font: normal normal 16px/21px "Candara", sans-serif;
+  text-transform: uppercase;
+  max-width: calc(50% - 35px);
+  min-width: calc(50% - 35px);
+}
+.news_wrapper .one_new .visible_place > .staff {
+  font: normal normal 16px/21px "Roboto", sans-serif;
+  color: var(--main-d-grey);
+  padding: 0 5px;
+  text-align: left;
+  max-width: max-content;
+}
+.news_wrapper .one_new .visible_place > .staff.district, .news_wrapper .one_new .visible_place > .staff.category {
+  background: #DFDFDF;
+}
+.news_wrapper .one_new .visible_place > .staff.group {
+  color: #fff;
+  background: var(--main-color);
+}
+.news_wrapper .one_new .visible_place > .name {
+  font: normal 700 21px/24px "Candara", sans-serif;
+  min-height: 130px;
+  padding: 0 10px 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

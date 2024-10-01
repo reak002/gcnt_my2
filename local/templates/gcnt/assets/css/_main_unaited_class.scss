@@ -1,0 +1,51 @@
+.d-flex{
+ display: flex;
+}
+
+.social_link_list{
+ display: flex;
+ gap: 9px;
+ @media ($main_media_width) {
+  order: 5;
+  margin: auto;
+  justify-content: center;
+  height: auto;
+  transition: all 0.1s;
+  padding: 20px 0;
+  &.hide_this_social{
+   height: 0;
+   overflow: hidden;
+   padding: 0;
+  }
+ }
+ a{
+  &:not(:hover){
+   svg{
+    > path{
+     &:first-child{
+      fill: var(--main-accent);
+     }
+    }
+    > polygon{
+     fill: var(--main-accent);
+    }
+    > g{
+     > path{
+      fill: #fff;
+     }
+    }
+   }
+  }
+  &[data-name-service="youtube"]{
+   &:not(:hover){
+    svg{
+     > path{
+      &:nth-child(3){
+       fill: var(--main-accent);
+      }
+     }
+    }
+   }
+  }
+ }
+}

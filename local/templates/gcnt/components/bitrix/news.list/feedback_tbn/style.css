@@ -1,0 +1,24 @@
+.feedback_btn_list .inner_wrapper {
+  width: var(--main-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+@media (max-width: 1120px) {
+  .feedback_btn_list .inner_wrapper {
+    flex-wrap: wrap;
+    width: calc(100vw - 40px);
+  }
+}
+.feedback_btn_list .inner_wrapper > span {
+  flex: 1 1 25%;
+  text-align: center;
+}
+@media (max-width: 1120px) {
+  .feedback_btn_list .inner_wrapper > span {
+    flex: 1 1 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

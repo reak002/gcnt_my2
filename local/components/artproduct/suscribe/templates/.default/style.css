@@ -1,0 +1,84 @@
+form .form_inner {
+  display: flex;
+  justify-content: stretch;
+  gap: 20px;
+}
+form .form_inner input,
+form .form_inner textarea,
+form .form_inner select {
+  padding: 20px;
+  font: normal normal 16px/20px "Roboto", sans-serif;
+  outline: none;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+}
+form .form_inner input::placeholder,
+form .form_inner textarea::placeholder,
+form .form_inner select::placeholder {
+  font: normal normal 16px/20px "Roboto", sans-serif;
+  color: #000;
+}
+form .form_inner textarea {
+  height: 100%;
+}
+form .form_inner .l_block {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form .form_inner .r_block {
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 20px;
+}
+form .control_block {
+  margin-top: 20px;
+  width: calc(70% - 13px);
+  display: flex;
+  justify-content: stretch;
+  gap: 20px;
+  float: right;
+}
+form .control_block .checkbox_container {
+  flex: 1 1 50%;
+}
+form .control_block .checkbox_container .custom-checkbox + label {
+  display: block;
+  text-align: left;
+  font: normal normal 14px/18px "Roboto", sans-serif;
+}
+form .control_block .checkbox_container .custom-checkbox + label a {
+  font: normal normal 14px/18px "Roboto", sans-serif;
+  color: #000;
+  text-decoration: underline;
+}
+form .control_block .checkbox_container .custom-checkbox + label span {
+  font: normal normal 14px/18px "Roboto", sans-serif;
+  padding-left: 23px;
+}
+form .control_block .btn {
+  flex: 1 1 50%;
+}
+
+.btn.resend {
+  display: block;
+  margin: 20px auto 0;
+  width: max-content;
+}
+
+.standard_page div.msg_text {
+  text-align: center;
+  font: normal normal 25px/23px "Candara", sans-serif;
+}
+.standard_page div.msg_text.success {
+  color: var(--main-accent);
+}
+.standard_page div.msg_text.error {
+  color: var(--main-color);
+}
+
+/*# sourceMappingURL=style.css.map */

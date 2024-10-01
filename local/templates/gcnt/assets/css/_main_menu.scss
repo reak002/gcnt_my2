@@ -1,0 +1,30 @@
+nav{
+  &.main_menu{
+    a{
+      color: #000;
+    }
+    > ul{
+      @extend %d-flex-c-sb;
+      > li{
+        max-width: max-content;
+        > a{
+          text-transform: uppercase;
+          color: #000;
+          font: normal 700 15px/18px "Candara", sans-serif;
+          &:hover{
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu_wrapper{
+  //height: 70px;
+  //width: 340px;
+  //background: whitesmoke;
+  //overflow-y: scroll;
+  //border: 1px solid;
+
+}

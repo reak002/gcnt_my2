@@ -1,0 +1,174 @@
+.news_wrapper {
+  width: var(--main-width);
+  margin: 70px auto 0;
+}
+@media (max-width: 1120px) {
+  .news_wrapper {
+    margin: 0 auto;
+  }
+}
+.news_wrapper .block_title {
+  font: normal 700 44px/42px "Candara", sans-serif;
+  margin-bottom: 35px;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .block_title {
+    font: normal normal 27px/27px "Candara", sans-serif;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+.news_wrapper .splide__arrows .splide__arrow {
+  width: max-content;
+  height: max-content;
+  max-height: max-content;
+  background: transparent;
+  top: -20px;
+}
+.news_wrapper .splide__arrows .splide__arrow.splide__arrow--prev {
+  right: 40px;
+  left: unset;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .splide__arrows .splide__arrow.splide__arrow--prev {
+    top: unset;
+    bottom: -5.5em;
+    right: unset;
+    left: 20px;
+  }
+}
+.news_wrapper .splide__arrows .splide__arrow.splide__arrow--next {
+  right: -9px;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .splide__arrows .splide__arrow.splide__arrow--next {
+    top: unset;
+    bottom: -5.5em;
+    left: unset;
+    right: 20px;
+  }
+}
+.news_wrapper .splide__arrows .splide__arrow svg {
+  width: 39px;
+  height: max-content;
+}
+.news_wrapper .splide__arrows .splide__arrow svg path {
+  stroke: #4d4d4d;
+  stroke-width: 1px;
+}
+.news_wrapper .splide__arrows .splide__arrow:hover svg path {
+  fill: var(--main-accent);
+  stroke: var(--main-accent);
+}
+.news_wrapper .one_new {
+  border-bottom: 1px solid #dfdfdf;
+}
+.news_wrapper .one_new .visible_place {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.news_wrapper .one_new .visible_place .img_default {
+  height: 200px;
+  background: url(assets/img/plate_bg.svg) no-repeat center center #f1f1f1;
+}
+.news_wrapper .one_new .visible_place > img.preview_picture {
+  max-width: 100%;
+  width: auto;
+  height: 200px;
+  max-height: 200px;
+  margin: auto;
+}
+.news_wrapper .one_new .visible_place > .date {
+  font: normal normal 16px/21px "Candara", sans-serif;
+  color: var(--main-d-grey);
+  padding: 0 20px;
+  text-align: left;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .one_new .visible_place > .date {
+    font: normal normal 14px/18px "Candara", sans-serif;
+  }
+}
+.news_wrapper .one_new .visible_place > .name {
+  font: normal 700 21px/24px "Candara", sans-serif;
+  min-height: 100px;
+  padding: 0 20px;
+  text-align: left;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .one_new .visible_place > .name {
+    font: normal 700 18px/20px "Candara", sans-serif;
+  }
+}
+.news_wrapper .one_new .invisible_place {
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: url(assets/img/news_bg.svg) no-repeat center center var(--main-color);
+  transition: height 0.7s;
+  color: #fff;
+}
+.news_wrapper .one_new .invisible_place > .date {
+  padding: 50px 20px 25px;
+  font: normal normal 16px/21px "Candara", sans-serif;
+}
+.news_wrapper .one_new .invisible_place > .name {
+  padding: 0 20px;
+  font: normal 700 21px/24px "Candara", sans-serif;
+}
+.news_wrapper .one_new .invisible_place > .preview_text {
+  padding: 30px 20px 0;
+  font: normal normal 16px/21px "Candara", sans-serif;
+}
+.news_wrapper .one_new .invisible_place > .link {
+  padding: 0 20px;
+}
+.news_wrapper .one_new .invisible_place > .link a {
+  font: normal normal 16px/15px "Candara", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.news_wrapper .one_new:hover .invisible_place {
+  height: 100%;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .splide__pagination {
+    max-width: 65%;
+    bottom: -1.5em;
+  }
+}
+.news_wrapper .splide__pagination .splide__pagination__page.is-active {
+  background: var(--main-color);
+}
+
+.standard_page .news_wrapper li {
+  margin-left: 0;
+}
+
+.bx-breadcrumb {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+}
+.bx-breadcrumb .bx-breadcrumb-item > span {
+  font: normal normal 18px/23px "Candara", sans-serif;
+  color: #454545;
+  opacity: 0.75;
+}
+.bx-breadcrumb a span {
+  font: normal normal 18px/23px "Candara", sans-serif;
+  color: #454545;
+  opacity: 0.85;
+}
+.bx-breadcrumb a:hover span {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

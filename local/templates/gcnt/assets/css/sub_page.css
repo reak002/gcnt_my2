@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*
+Файл main.css является автосгенерированным! не редактируй его!
+Если не знаешь как рабоать с SASS пиши (переопределяй) стили в файле local/templates/gcnt/css/custom.css
+*/
+.sub_header {
+  background: url(../img/sub_menu_bg.svg) var(--main-color);
+  margin-bottom: 50px;
+}
+.sub_header > .inner {
+  width: var(--main-width);
+  margin: auto;
+  display: flex;
+  height: 235px;
+  align-items: center;
+}
+@media (max-width: 1120px) {
+  .sub_header > .inner {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.sub_header > .inner > .h1_wrapper {
+  flex: 1 1 32%;
+}
+.sub_header > .inner > .h1_wrapper > h1 {
+  font: normal normal 44px/42px "Candara", sans-serif;
+  color: #fff;
+  margin: 50px 0;
+}
+@media (max-width: 1120px) {
+  .sub_header > .inner > .h1_wrapper > h1 {
+    max-width: 95vw;
+    margin: 20px auto;
+    font: normal normal 27px/27px "Candara", sans-serif;
+    padding: 0 20px;
+  }
+}
+.sub_header > .inner > .menu_wrapper {
+  flex: 1 1 68%;
+  border-left: 1px solid #fff;
+  overflow-x: auto;
+}
+@media (max-width: 1120px) {
+  .sub_header > .inner > .menu_wrapper {
+    border: none;
+    padding-bottom: 30px;
+  }
+}
+.sub_header > .inner > .menu_wrapper > ul.sub_page_menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  flex-direction: column;
+  max-height: 185px;
+}
+@media (max-width: 1120px) {
+  .sub_header > .inner > .menu_wrapper > ul.sub_page_menu {
+    max-height: unset;
+  }
+}
+.sub_header > .inner > .menu_wrapper > ul.sub_page_menu > li {
+  flex: 1 1 calc(100% / 3 - 30px);
+  max-width: calc(100% / 3 - 30px);
+  padding-left: 20px;
+}
+@media (max-width: 1120px) {
+  .sub_header > .inner > .menu_wrapper > ul.sub_page_menu > li {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.sub_header > .inner > .menu_wrapper > ul.sub_page_menu > li > a {
+  font: normal normal 20px/26px "Candara", sans-serif;
+  color: #fff;
+}
+@media (max-width: 1120px) {
+  .sub_header > .inner > .menu_wrapper > ul.sub_page_menu > li > a {
+    font: normal normal 16px/20px "Candara", sans-serif;
+  }
+}
+.sub_header > .inner > .menu_wrapper > ul.sub_page_menu > li > a:hover {
+  text-shadow: 0 0 2px white;
+}
+
+/*# sourceMappingURL=sub_page.css.map */

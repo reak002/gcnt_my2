@@ -1,0 +1,22 @@
+#bvi-panel-close {
+  display: none;
+}
+
+.bvi-body > .bvi.bvi-panel {
+  display: none;
+}
+
+html body .bvi-body[data-bvi-theme] * [fill="#FDFDFD"],
+html body .bvi-body[data-bvi-theme] * [fill="url(#telega_airbus_gradientheader)"],
+html body .bvi-body[data-bvi-theme] * [fill=white] {
+  fill: #fff !important;
+}
+html body .bvi-body[data-bvi-theme] * .horizontal-multilevel-menu {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+html body .bvi-body[data-bvi-theme] * .plate_list > .inner_wrapper > div.one_plate > a.rhombus > div.substrate {
+  background: transparent !important;
+}
+
+/*# sourceMappingURL=style.css.map */

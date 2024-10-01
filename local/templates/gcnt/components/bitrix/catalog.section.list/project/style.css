@@ -1,0 +1,106 @@
+.project_wrapper .title {
+  margin: 100px 0 45px;
+  text-align: center;
+}
+@media (max-width: 1120px) {
+  .project_wrapper .title {
+    margin: 40px 0 25px;
+  }
+}
+.project_wrapper .title > a {
+  font: normal normal 34px/32px "Candara", sans-serif;
+  color: #000;
+}
+@media (max-width: 1120px) {
+  .project_wrapper .title > a {
+    font: normal normal 27px/27px "Candara", sans-serif;
+  }
+}
+.project_wrapper .title > a:hover {
+  color: var(--main-color);
+}
+.project_wrapper .project_list {
+  padding: 20px 0;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  box-sizing: border-box;
+}
+@media (max-width: 1120px) {
+  .project_wrapper .project_list {
+    margin: auto;
+    border-color: #dfdfdf;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    padding: 20px 0;
+  }
+}
+.project_wrapper .project_list .splide__track {
+  text-align: center;
+}
+.project_wrapper .project_list .splide__track .splide__list .splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project_wrapper .project_list .splide__track .splide__list .splide__slide img {
+  max-width: 130px;
+}
+.project_wrapper .project_list .splide__track .splide__list .splide__slide .img_default {
+  height: 130px;
+  width: 130px;
+  background: url(assets/img/plate_bg.svg) no-repeat center center #f1f1f1;
+}
+@media (max-width: 1120px) {
+  .project_wrapper .project_list .splide__arrows {
+    width: 100vw;
+  }
+}
+.project_wrapper .project_list .splide__arrow {
+  width: calc( 100% + 2px);
+  background: 0;
+  border: 1px solid #dfdfdf;
+  opacity: 1;
+}
+.project_wrapper .project_list .splide__arrow:hover svg {
+  margin-top: 4px;
+}
+.project_wrapper .project_list .splide__arrow:hover svg path {
+  fill: var(--main-accent);
+}
+.project_wrapper .project_list .splide__arrow.splide__arrow--prev {
+  border-radius: 3px 3px 0 0;
+  top: -25px;
+}
+@media (max-width: 1120px) {
+  .project_wrapper .project_list .splide__arrow.splide__arrow--prev {
+    height: calc(100% + 2px);
+    width: 30px;
+    top: calc(100% - 85px);
+    left: -1px;
+  }
+}
+.project_wrapper .project_list .splide__arrow.splide__arrow--prev svg {
+  margin-top: 4px;
+}
+.project_wrapper .project_list .splide__arrow.splide__arrow--next {
+  border-radius: 0 0 3px 3px;
+  bottom: -25px;
+}
+@media (max-width: 1120px) {
+  .project_wrapper .project_list .splide__arrow.splide__arrow--next {
+    height: calc(100% + 2px);
+    width: 30px;
+    top: calc(100% - 85px);
+    right: -1px;
+  }
+}
+.project_wrapper .project_list .splide__arrow.splide__arrow--next svg {
+  margin-top: -2px;
+}
+.project_wrapper .project_list .splide__arrow svg path {
+  fill: #dbdbdb;
+}
+
+/*# sourceMappingURL=style.css.map */

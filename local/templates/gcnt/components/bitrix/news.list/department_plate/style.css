@@ -1,0 +1,115 @@
+.plate_list > .inner_wrapper > div.one_plate > a.rhombus > div.substrate, .plate_list > .inner_wrapper > div.one_plate > a.rhombus, .plate_list > .inner_wrapper > div.one_plate, .plate_list > .inner_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plate_list {
+  z-index: 1;
+  width: 100%;
+  background: url(img/pattern_bg.svg) center top -35px #fff;
+}
+.plate_list > .inner_wrapper {
+  width: var(--main-width);
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  gap: 0 75px;
+}
+@media (max-width: 1120px) {
+  .plate_list > .inner_wrapper {
+    width: 280px;
+    gap: 20px;
+    padding: 50px 0;
+  }
+}
+.plate_list > .inner_wrapper > div.one_plate {
+  flex: 1 1 calc(100% / 3 - 50px);
+  max-width: calc(100% / 3 - 50px);
+}
+.plate_list > .inner_wrapper > div.one_plate:nth-child(1) > a.rhombus, .plate_list > .inner_wrapper > div.one_plate:nth-child(2) > a.rhombus, .plate_list > .inner_wrapper > div.one_plate:nth-child(3) > a.rhombus {
+  background: var(--main-accent);
+}
+.plate_list > .inner_wrapper > div.one_plate:nth-child(1) > a.rhombus:hover, .plate_list > .inner_wrapper > div.one_plate:nth-child(2) > a.rhombus:hover, .plate_list > .inner_wrapper > div.one_plate:nth-child(3) > a.rhombus:hover {
+  background: var(--main-color);
+}
+.plate_list > .inner_wrapper > div.one_plate:nth-child(4) > a, .plate_list > .inner_wrapper > div.one_plate:nth-child(5) > a {
+  margin-top: -60px;
+  background: var(--main-color);
+}
+.plate_list > .inner_wrapper > div.one_plate:nth-child(4) > a:hover, .plate_list > .inner_wrapper > div.one_plate:nth-child(5) > a:hover {
+  background: var(--main-accent);
+}
+@media (max-width: 1120px) {
+  .plate_list > .inner_wrapper > div.one_plate {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .plate_list > .inner_wrapper > div.one_plate:nth-child(1), .plate_list > .inner_wrapper > div.one_plate:nth-child(3), .plate_list > .inner_wrapper > div.one_plate:nth-child(5) {
+    justify-content: flex-start;
+  }
+  .plate_list > .inner_wrapper > div.one_plate:nth-child(1) > a.rhombus, .plate_list > .inner_wrapper > div.one_plate:nth-child(3) > a.rhombus, .plate_list > .inner_wrapper > div.one_plate:nth-child(5) > a.rhombus {
+    background: var(--main-accent) !important;
+  }
+  .plate_list > .inner_wrapper > div.one_plate:nth-child(1) > a.rhombus:hover, .plate_list > .inner_wrapper > div.one_plate:nth-child(3) > a.rhombus:hover, .plate_list > .inner_wrapper > div.one_plate:nth-child(5) > a.rhombus:hover {
+    background: var(--main-color) !important;
+  }
+  .plate_list > .inner_wrapper > div.one_plate:nth-child(3) > a, .plate_list > .inner_wrapper > div.one_plate:nth-child(5) > a {
+    margin-top: -60px;
+  }
+  .plate_list > .inner_wrapper > div.one_plate:nth-child(2), .plate_list > .inner_wrapper > div.one_plate:nth-child(4) {
+    justify-content: flex-end;
+  }
+  .plate_list > .inner_wrapper > div.one_plate:nth-child(2) > a, .plate_list > .inner_wrapper > div.one_plate:nth-child(4) > a {
+    margin-top: -60px;
+    background: var(--main-color) !important;
+  }
+  .plate_list > .inner_wrapper > div.one_plate:nth-child(2) > a:hover, .plate_list > .inner_wrapper > div.one_plate:nth-child(4) > a:hover {
+    background: var(--main-accent) !important;
+  }
+}
+.plate_list > .inner_wrapper > div.one_plate > a.rhombus {
+  border-radius: 40px;
+  height: 250px;
+  width: 250px;
+  transform: rotate(45deg);
+}
+@media (max-width: 1120px) {
+  .plate_list > .inner_wrapper > div.one_plate > a.rhombus {
+    height: 160px;
+    width: 160px;
+    border-radius: 22px;
+  }
+}
+.plate_list > .inner_wrapper > div.one_plate > a.rhombus > div.substrate {
+  height: 100%;
+  width: 100%;
+  background: url("img/plate_bg.svg") no-repeat center center;
+  transform: rotate(-45deg);
+}
+@media (max-width: 1120px) {
+  .plate_list > .inner_wrapper > div.one_plate > a.rhombus > div.substrate {
+    background: url("img/plate_bg_mob.svg") no-repeat center center;
+  }
+}
+.plate_list > .inner_wrapper > div.one_plate > a.rhombus > div.substrate > div.text {
+  text-align: center;
+  color: #fff;
+  font: normal 700 22px/25px "Candara", sans-serif;
+  margin-top: -15px;
+}
+@media (max-width: 1120px) {
+  .plate_list > .inner_wrapper > div.one_plate > a.rhombus > div.substrate > div.text {
+    font: normal 700 16px/18px "Candara", sans-serif;
+  }
+}
+.plate_list > .inner_wrapper > div.one_plate > a.rhombus:hover .substrate {
+  transition: transform 0.7s;
+  transform: scale(1.1) rotate(-45deg);
+}
+.plate_list > .inner_wrapper > div.one_plate > a.rhombus:hover .substrate .text {
+  transition: transform 0.7s;
+  transform: scale(0.9);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+@media ($main_media_width) {
+  .sh_wr {
+    overflow: scroll;
+    padding-bottom: 30px;
+  }
+  #scheduler_here {
+    width: 1120px !important;
+  }
+}
+.dhx_cal_container{
+  width: 100%;
+  height: 570px;
+  .dhx_cal_navline{
+    [role="button"]{
+      background: transparent;
+      color:var(--main-color);
+      display: flex;
+      align-items: center;
+      svg{
+        &:hover{
+          fill: var(--main-accent);
+        }
+      }
+      &:hover{
+        color:var(--main-accent);
+      }
+    }
+    .dhx_cal_date{
+      color: #000;
+      font: normal normal 34px/32px "Candara", sans-serif !important;
+    }
+    .dhx_cal_today_button{
+      font-size: 15px;
+    }
+  }
+  .dhx_cal_header{
+    height: 30px !important;
+    > div{
+      height: 50px !important;
+    }
+    .dhx_scale_bar{
+      color: #fff;
+      font: normal normal 16px/27px "Candara", sans-serif !important;
+      height: 30px !important;
+      background: var(--main-accent);
+      text-transform: uppercase;
+    }
+  }
+  .dhx_cal_data{
+    top: 90px !important;
+    border: 1px solid #e0e0e0 !important;
+    width: calc(100% - 3px) !important;
+    div{
+      &.dhx_cal_event_clear{
+        white-space: break-spaces;
+        overflow: unset;
+        height: 110px;
+        position: relative;
+        .detail_link{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font: normal normal 16px/21px "Candara", sans-serif !important;
+          color: #fff;
+          background: var(--main-color);
+          text-transform: uppercase;
+          padding: 0 5px;
+        }
+      }
+      b{
+        font: normal normal 19px/23px "Candara", sans-serif !important;
+        display: inline-block;
+        float: none;
+        color: #000 !important;
+        width: 90%;
+        margin-bottom: 15px;
+      }
+      color: #454545;
+      font: normal normal 12px/13px "Roboto", sans-serif !important;
+    }
+  }
+  .dhx_cal_data{
+    table{
+      tr{
+        //display: flex;
+        td{
+          //flex: 1 1 16.28%;
+          &:nth-child(6),
+          &:nth-child(7){
+            //flex: 1 1 9.3%;
+            div{
+              background: rgba(177, 29, 72, 0.1);
+            }
+          }
+          padding: 0;
+          .dhx_month_head{
+            color: #000;
+            font: normal normal 34px/32px "Candara", sans-serif !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#scheduler_here{
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+

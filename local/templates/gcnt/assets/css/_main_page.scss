@@ -1,0 +1,23 @@
+.block_with_map{
+  .block_with_map_inner{
+    width: var(--main-width);
+    margin: auto;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    @media ($main_media_width) {
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .main_map_container{
+      width: 540px;
+    }
+    .left_slider,
+    .right_slider{
+      width: 190px;
+      @media ($main_media_width) {
+        width: calc(100vw - 40px);
+      }
+    }
+  }
+}

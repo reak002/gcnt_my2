@@ -1,0 +1,22 @@
+@media (max-width: 1120px) {
+  .parent-root-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.parent-root-wrapper .open_menu_akordeon {
+  display: none;
+}
+@media (max-width: 1120px) {
+  .parent-root-wrapper .open_menu_akordeon {
+    display: flex;
+    max-height: min-content;
+    align-items: flex-start;
+  }
+  .parent-root-wrapper .open_menu_akordeon.open {
+    transform: rotate(-180deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

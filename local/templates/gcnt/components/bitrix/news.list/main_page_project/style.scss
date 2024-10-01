@@ -1,0 +1,102 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.project_wrapper{
+  .title{
+    margin: 100px 0 45px;
+    text-align: center;
+    @media ($main_media_width) {
+      margin: 40px 0 25px;
+    }
+    > a{
+      font: normal normal 34px/32px "Candara", sans-serif;
+      @media ($main_media_width) {
+        font: normal normal 27px/27px "Candara", sans-serif;
+      }
+      color: #000;
+      &:hover{
+        color: var(--main-color);
+      }
+    }
+  }
+  .project_list{
+    padding: 20px 0;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    box-sizing: border-box;
+    @media ($main_media_width) {
+      margin: auto;
+      border-color: #dfdfdf;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      padding: 20px 0;
+    }
+    .splide__track{
+      text-align: center;
+      .splide__list{
+        .splide__slide{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            max-width: 130px;
+          }
+        }
+      }
+    }
+    .splide__arrows{
+      @media ($main_media_width) {
+        width: 100vw;
+      }
+    }
+    .splide__arrow{
+      width: calc( 100% + 2px);
+      background: 0;
+      border: 1px solid #dfdfdf;
+      opacity: 1;
+
+      &:hover{
+        //border-color: var(--main-accent);
+        svg{
+          margin-top: 4px;
+          path{
+            fill: var(--main-accent);
+          }
+        }
+      }
+      &.splide__arrow--prev{
+        border-radius: 3px 3px 0 0;
+        top: -25px;
+        @media ($main_media_width) {
+          height: calc(100% + 2px);
+          width: 30px;
+          top: calc(100% - 85px);
+          left: -1px;
+        }
+        svg {
+          margin-top: 4px;
+        }
+      }
+      &.splide__arrow--next{
+        border-radius: 0 0 3px 3px;
+        bottom: -25px;
+        @media ($main_media_width) {
+          height: calc(100% + 2px);
+          width: 30px;
+          top: calc(100% - 85px);
+          right: -1px;
+        }
+        svg {
+          margin-top: -2px;
+        }
+      }
+      svg{
+        path{
+          fill: #dbdbdb;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,89 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.custom_filter {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  > *{
+    flex: 1 1 25%;
+    max-width: 25%;
+    min-width: 25%;
+  }
+  [type="submit"]{
+    &.btn {
+      &.red_btn {
+        border-right: none;
+      }
+    }
+  }
+
+  select {
+    padding: 20px;
+    outline: none;
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    width: 100%;
+    moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5 8L0.669873 0.499999L9.33013 0.5L5 8Z' fill='%23fff'/%3e%3c/svg%3e");
+    background-repeat: no-repeat, repeat;
+    background-position: right 10px top 50%, 0 0;
+    background-size: 20px auto, 100%;
+    text-align-last: center;
+    font: normal 400 16px/15px "Candara", sans-serif;
+    padding-right: 45px;
+    border-left: 1px solid #fff;
+    &[name="arrFilter_pf[CATEGORY]"]{
+      &.no-select {
+        border-left: 1px solid var(--main-color);
+      }
+      border-right: none;
+    }
+    &[name="arrFilter_pf[DISTRICT]"]{
+      border-left: 1px solid #fff;
+      border-right: none;
+      &.no-select {
+        border-left: 1px solid var(--main-color);
+      }
+    }
+    &[name="arrFilter_pf[GROUP]"]{
+      border-left: 1px solid #fff;
+      &.no-select {
+        border-left: 1px solid var(--main-color);
+      }
+    }
+    &.no-select{
+      background: #fff;
+      color: var(--main-color);
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5 8L0.669873 0.499999L9.33013 0.5L5 8Z' fill='%23B11D48'/%3e%3c/svg%3e");
+      background-repeat: no-repeat, repeat;
+      background-position: right 10px top 50%, 0 0;
+      background-size: 20px auto, 100%;
+      border-left: none;
+
+    }
+    option{
+      font: normal 400 16px/15px "Candara", sans-serif;
+      text-align: left;
+      background: #fff;
+      color: #000;
+      &:first-child{
+        display: none;
+      }
+    }
+  }
+  @media ($main_media_width) {
+    flex-direction: column;
+    > *{
+      min-width: 100%;
+      border: 1px solid var(--main-color) !important;
+      border-top: none !important;
+    }
+  }
+}

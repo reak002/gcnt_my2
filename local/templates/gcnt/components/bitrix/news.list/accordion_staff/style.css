@@ -1,0 +1,115 @@
+.accordion.section_list .section.open .section_body, .accordion.section_list .section .section_body .elements_list .element, .accordion.section_list .section, .accordion.section_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion.section_list {
+  gap: 5px;
+}
+@media (max-width: 1120px) {
+  .accordion.section_list {
+    margin-bottom: 40px;
+  }
+}
+.accordion.section_list .section {
+  background: rgba(31, 106, 116, 0.1);
+  transition: all 0.5s;
+}
+.accordion.section_list .section .section_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font: normal 700 21px/24px "Candara", sans-serif;
+  padding: 15px;
+}
+.accordion.section_list .section .section_name .action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion.section_list .section .section_name .action_btn > svg {
+  transition: all 0.3s;
+}
+.accordion.section_list .section .section_body {
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+.accordion.section_list .section .section_body .section_description {
+  font: normal normal 18px/27px "Roboto", sans-serif;
+}
+.accordion.section_list .section .section_body .elements_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.accordion.section_list .section .section_body .elements_list .element {
+  flex: 1 1 50%;
+  font: normal normal 18px/27px "Roboto", sans-serif;
+  display: block;
+  max-width: calc(50% - 30px);
+  border: 1px solid #f1f1f1;
+  padding: 9px;
+}
+@media (max-width: 1120px) {
+  .accordion.section_list .section .section_body .elements_list .element {
+    flex: 1 1 100%;
+    max-width: 100%;
+    display: flex;
+  }
+}
+.accordion.section_list .section .section_body .elements_list .element img {
+  max-width: 150px;
+  float: left;
+}
+.accordion.section_list .section .section_body .elements_list .element img.img_default {
+  height: 200px;
+  background: #f1f1f1;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+@media (max-width: 1120px) {
+  .accordion.section_list .section .section_body .elements_list .element img {
+    max-width: 100%;
+  }
+}
+.accordion.section_list .section .section_body .elements_list .element .element_name {
+  font-weight: bold;
+  float: right;
+  max-width: calc(100% - 170px);
+}
+@media (max-width: 1120px) {
+  .accordion.section_list .section .section_body .elements_list .element .element_name {
+    max-width: 100%;
+  }
+}
+.accordion.section_list .section .section_body .elements_list .element .element_status {
+  float: right;
+  max-width: calc(100% - 170px);
+  text-align: right;
+}
+@media (max-width: 1120px) {
+  .accordion.section_list .section .section_body .elements_list .element .element_status {
+    max-width: 100%;
+  }
+}
+.accordion.section_list .section.open {
+  background: #fff;
+}
+.accordion.section_list .section.open .section_name {
+  color: var(--main-color);
+}
+.accordion.section_list .section.open .section_name .action_btn > svg {
+  transform: rotate(-45deg);
+}
+.accordion.section_list .section.open .section_name .action_btn > svg path {
+  fill: var(--main-color);
+}
+.accordion.section_list .section.open .section_body {
+  padding: 15px;
+  max-height: 50000px;
+  transition: max-height 0.5s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */

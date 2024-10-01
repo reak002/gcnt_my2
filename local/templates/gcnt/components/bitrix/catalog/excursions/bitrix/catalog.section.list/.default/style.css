@@ -1,0 +1,112 @@
+.news_wrapper {
+  width: var(--main-width);
+  margin: 70px auto 0;
+}
+.news_wrapper .news_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .news_list ul {
+    flex-direction: column;
+  }
+}
+.news_wrapper .news_list ul li {
+  list-style: none;
+  flex: 1 1 calc(100% / 3 - 40px);
+  max-width: calc(100% / 3 - 40px);
+}
+@media (max-width: 1120px) {
+  .news_wrapper .news_list ul li {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.news_wrapper .block_title {
+  font: normal 700 44px/42px "Candara", sans-serif;
+  margin-bottom: 35px;
+}
+.news_wrapper .one_new {
+  border-bottom: 1px solid #dfdfdf;
+  position: relative;
+}
+.news_wrapper .one_new .visible_place {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+}
+.news_wrapper .one_new .visible_place:before {
+  content: attr(data-age-limit);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  font: normal 700 16px/16px "Candara", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+}
+.news_wrapper .one_new .visible_place > img.preview_picture {
+  max-width: 100%;
+  width: auto;
+  height: 200px;
+  max-height: 200px;
+  margin: auto;
+}
+.news_wrapper .one_new .visible_place > .date {
+  font: normal normal 16px/21px "Candara", sans-serif;
+  color: var(--main-d-grey);
+  padding: 0 20px;
+  text-align: left;
+}
+.news_wrapper .one_new .visible_place > .name {
+  font: normal 700 21px/24px "Candara", sans-serif;
+  min-height: 100px;
+  padding: 0 20px;
+  text-align: center;
+}
+.news_wrapper .one_new .invisible_place {
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: url(assets/img/news_bg.svg) no-repeat center center var(--main-color);
+  transition: height 0.7s;
+  color: #fff;
+}
+.news_wrapper .one_new .invisible_place > .date {
+  padding: 50px 20px 25px;
+  font: normal normal 16px/21px "Candara", sans-serif;
+}
+.news_wrapper .one_new .invisible_place > .name {
+  padding: 0 20px;
+  font: normal 700 21px/24px "Candara", sans-serif;
+}
+.news_wrapper .one_new .invisible_place > .preview_text {
+  padding: 30px 20px 40px;
+  font: normal normal 16px/21px "Candara", sans-serif;
+}
+.news_wrapper .one_new .invisible_place > .link {
+  padding: 0 20px;
+}
+.news_wrapper .one_new .invisible_place > .link a {
+  font: normal normal 16px/15px "Candara", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.news_wrapper .one_new:hover .invisible_place {
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

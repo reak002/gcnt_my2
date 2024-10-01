@@ -1,0 +1,106 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+%-d-flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.accordion {
+  &.section_list {
+    @extend %-d-flex-col;
+    gap: 5px;
+    .section{
+      background: rgba(31, 106, 116, 0.1);
+      transition: all 0.5s;
+      @extend %-d-flex-col;
+      .section_name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font: normal 700 21px/24px "Candara", sans-serif;
+        padding: 15px;
+        .action_btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > svg{
+            transition: all 0.3s;
+          }
+        }
+      }
+      .section_body{
+        transition: max-height 0.3s ease-out;
+        max-height: 0;
+        overflow: hidden;
+        .section_description{
+          font: normal normal 18px/27px "Roboto", sans-serif;
+        }
+
+        .elements_list{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          .element{
+            @extend %-d-flex-col;
+            flex: 1 1 calc(50% - 10px);
+            font: normal normal 18px/27px "Roboto", sans-serif;
+            gap: 5px;
+            @media ($main_media_width) {
+              flex: 1 1 100%;
+            }
+            .element_name{
+              font-weight: bold;
+            }
+            .element_genres{
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              .element_genre{
+                background: var(--main-color);
+                width: fit-content;
+                padding: 0 15px;
+                text-align: center;
+                color: #fff;
+              }
+            }
+            .element_status{
+              background: var(--main-accent);
+              width: fit-content;
+              padding: 0 15px;
+              text-align: center;
+              color: #fff;
+            }
+            .element_preview_text{
+              font-style: italic;
+            }
+            .element_institution{
+              text-decoration: underline;
+            }
+          }
+        }
+
+      }
+      &.open{
+        background: #fff;
+        .section_name{
+          color: var(--main-color);
+          .action_btn{
+            > svg{
+              transform: rotate(-45deg);
+              path{
+                fill: var(--main-color);
+              }
+            }
+          }
+        }
+        .section_body {
+          @extend %-d-flex-col;
+          padding: 15px;
+          max-height: 50000px;
+          transition: max-height 0.5s ease-in;
+
+        }
+      }
+    }
+  }
+}

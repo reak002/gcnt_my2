@@ -1,0 +1,27 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.sub_excskur_list{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 20px auto auto;
+  max-width: 100%;
+  > a{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--main-accent);
+    gap: 10px;
+    > svg{
+      height: 30px;
+      width: 30px;
+      fill: var(--main-accent);
+
+    }
+  }
+}
+.ecskurs_description{
+  width: 90vw;
+  margin: auto;
+  text-align: justify;
+  max-width: 100%;
+}

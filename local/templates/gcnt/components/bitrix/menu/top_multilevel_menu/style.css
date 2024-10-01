@@ -1,0 +1,176 @@
+.horizontal-multilevel-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu {
+    flex-direction: column;
+    align-items: self-start;
+    margin-top: 30px;
+    gap: 10px;
+  }
+}
+.horizontal-multilevel-menu > li {
+  max-width: max-content;
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu > li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    float: none;
+    flex: 1 1 100%;
+    min-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.horizontal-multilevel-menu > li .open_sub_menu_mobile {
+  display: none;
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu > li .open_sub_menu_mobile {
+    display: block;
+    transition: transform 0.5s;
+  }
+}
+.horizontal-multilevel-menu > li > ul {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}
+.horizontal-multilevel-menu > li:hover > ul {
+  display: flex;
+  height: 250px;
+  box-shadow: 0 8px 15px -6px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu > li:hover > ul {
+    padding: 0;
+    position: unset;
+    height: auto;
+    flex-direction: column;
+    max-height: unset;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu > li:hover .open_sub_menu_mobile svg {
+    transform: rotate(-180deg);
+  }
+}
+.horizontal-multilevel-menu a {
+  display: block;
+  text-transform: uppercase;
+  color: #000;
+  font: normal 700 15px/18px "Candara", sans-serif;
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu a {
+    font: normal 700 16px/20px "Candara", sans-serif;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+.horizontal-multilevel-menu a.parent {
+  background: red;
+}
+.horizontal-multilevel-menu a.denied {
+  background: silver;
+}
+.horizontal-multilevel-menu a:hover {
+  color: var(--main-color);
+}
+.horizontal-multilevel-menu li {
+  float: left;
+}
+.horizontal-multilevel-menu li a.root-item-selected {
+  color: var(--main-accent);
+}
+.horizontal-multilevel-menu li:hover, .horizontal-multilevel-menu li:jshover {
+  background: #D6D6D6;
+  color: #fff;
+}
+.horizontal-multilevel-menu li:hover a.root-item, .horizontal-multilevel-menu li:jshover a.root-item {
+  background: #e26336;
+  color: #fff;
+}
+.horizontal-multilevel-menu li.item-selected {
+  color: var(--main-accent);
+}
+.horizontal-multilevel-menu li ul {
+  position: absolute;
+  z-index: 500;
+  left: 0;
+  right: 0;
+  background: #fff;
+  top: auto;
+  padding: 70px calc((100vw - var(--main-width)) / 2) 20px calc(((100vw - var(--main-width)) / 2) + 370px);
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 200px;
+}
+.horizontal-multilevel-menu li ul::before {
+  content: " ";
+  border-top: 1px solid #f1f1f1;
+  width: 100%;
+  position: inherit;
+  left: 0;
+  margin-top: -46px;
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu li ul::before {
+    margin-top: 0;
+    border: none;
+  }
+}
+.horizontal-multilevel-menu li ul::after {
+  content: attr(data-item-name);
+  float: left;
+  margin-left: -370px;
+  width: 350px;
+  max-width: 350px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 35px;
+  border-right: 1px solid #f1f1f1;
+  font: normal normal 34px/32px "Candara", sans-serif;
+  position: inherit;
+  left: calc(((100vw - var(--main-width)) / 2) + 370px);
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu li ul::after {
+    margin-top: 0;
+    margin-left: 0;
+    width: 0;
+    max-width: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    content: "";
+  }
+}
+.horizontal-multilevel-menu li ul a {
+  text-align: left;
+  font: normal normal 18px/23px "Candara", sans-serif;
+  color: #454545;
+}
+@media (max-width: 1120px) {
+  .horizontal-multilevel-menu li ul a {
+    font: normal normal 18px/25px "Candara", sans-serif;
+    text-transform: unset;
+  }
+}
+.horizontal-multilevel-menu li ul ul {
+  margin: -27px 0 0 132px;
+}
+.horizontal-multilevel-menu li li {
+  padding: 5px 0 5px 25px;
+}
+
+div.menu-clear-left {
+  clear: left;
+}
+
+/*# sourceMappingURL=style.css.map */

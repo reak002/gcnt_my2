@@ -1,0 +1,165 @@
+.news_wrapper {
+  width: var(--main-width);
+}
+.news_wrapper .news_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .news_list ul {
+    flex-wrap: wrap;
+  }
+}
+.news_wrapper .news_list ul li {
+  list-style: none;
+  flex: 1 1 calc(100% / 3 - 40px);
+  max-width: calc(100% / 3 - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1120px) {
+  .news_wrapper .news_list ul li {
+    lex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.news_wrapper .block_title {
+  font: normal 700 44px/42px "Candara", sans-serif;
+  margin-bottom: 35px;
+}
+.news_wrapper .one_new {
+  position: relative;
+}
+.news_wrapper .one_new .visible_place {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0;
+  position: relative;
+}
+.news_wrapper .one_new .visible_place:before {
+  content: attr(data-age-limit);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  font: normal 700 16px/16px "Candara", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 15;
+  color: #000;
+}
+.news_wrapper .one_new .visible_place .img_wrapper {
+  position: relative;
+}
+.news_wrapper .one_new .visible_place .img_wrapper > img.preview_picture {
+  max-width: 100%;
+  width: auto;
+  height: 200px;
+  max-height: 200px;
+  margin: auto;
+}
+.news_wrapper .one_new .visible_place .img_wrapper > .type_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 20px);
+  padding: 20px 10px;
+  gap: 10px;
+  flex-wrap: wrap-reverse;
+}
+.news_wrapper .one_new .visible_place .img_wrapper > .type_list .one_type {
+  flex: 1 1 calc(50% - 35px);
+  background: var(--main-color);
+  color: #fff;
+  padding: 0 15px;
+  font: normal normal 16px/21px "Candara", sans-serif;
+  text-transform: uppercase;
+  max-width: calc(50% - 35px);
+  min-width: calc(50% - 35px);
+}
+.news_wrapper .one_new .visible_place > .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 200px;
+}
+.news_wrapper .one_new .visible_place > .info .line_first {
+  padding: 0 20px;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+.news_wrapper .one_new .visible_place > .info .line_first .left {
+  flex: 1 1 80%;
+  text-align: left;
+}
+.news_wrapper .one_new .visible_place > .info .line_first .left .date {
+  font: normal 700 22px/24px "Candara", sans-serif;
+  color: #000;
+}
+.news_wrapper .one_new .visible_place > .info .line_first .left .place {
+  font: normal normal 16px/21px "Roboto", sans-serif;
+  color: var(--main-d-grey);
+}
+.news_wrapper .one_new .visible_place > .info .line_first .right {
+  flex: 1 1 20%;
+}
+.news_wrapper .one_new .visible_place > .info .line_first .right .time {
+  font: normal normal 44px/42px "Candara", sans-serif;
+  color: #000;
+  text-align: right;
+}
+.news_wrapper .one_new .visible_place > .info .line_second {
+  padding: 0 20px;
+  font: normal 700 22px/24px "Candara", sans-serif;
+  color: #000;
+  min-height: 50px;
+  text-align: left;
+}
+.news_wrapper .one_new .visible_place > .info .line_free {
+  padding: 0 20px;
+  font: normal normal 16px/21px "Roboto", sans-serif;
+  color: var(--main-d-grey);
+  text-align: left;
+}
+.news_wrapper .one_new .control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.news_wrapper .one_new .control .free_event {
+  width: calc(100% - 40px);
+  margin: auto;
+  display: block;
+  font: normal 700 16px/15px "Candara", sans-serif;
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+}
+.news_wrapper .one_new .control .btn {
+  width: calc(100% - 40px);
+  margin: auto;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

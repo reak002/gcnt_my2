@@ -1,0 +1,27 @@
+.sub_excskur_list {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 20px auto auto;
+  max-width: 100%;
+}
+.sub_excskur_list > a {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--main-accent);
+  gap: 10px;
+}
+.sub_excskur_list > a > svg {
+  height: 30px;
+  width: 30px;
+  fill: var(--main-accent);
+}
+
+.ecskurs_description {
+  width: 90vw;
+  margin: auto;
+  text-align: justify;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

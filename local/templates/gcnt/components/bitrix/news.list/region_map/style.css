@@ -1,0 +1,62 @@
+.region_map {
+  position: relative;
+}
+@media (max-width: 1120px) {
+  .region_map {
+    width: calc(100vw - 40px);
+    margin: 30px auto auto;
+  }
+}
+@media (max-width: 1120px) {
+  .region_map > svg {
+    width: calc(100vw - 40px);
+    height: auto;
+  }
+}
+.region_map > svg path {
+  cursor: pointer;
+}
+.region_map > svg path:hover {
+  fill: var(--main-accent);
+}
+.region_map > svg path[data-hovered=true] {
+  fill: var(--main-accent);
+}
+.region_map .popup_map {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.region_map .popup_map .name {
+  background: var(--main-color);
+  text-align: center;
+  color: #fff;
+  padding: 10px 20px;
+  width: 110px;
+  font: normal normal 11px/10px "Candara", sans-serif;
+}
+.region_map .popup_map .link_block {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 10px 5px;
+}
+.region_map .popup_map .link_block > a {
+  flex: 1 1 50%;
+  width: 50%;
+  text-align: center;
+  font: normal normal 16px/15px "Candara", sans-serif;
+  color: #000;
+}
+.region_map .popup_map .link_block > a:first-child {
+  border-right: 1px solid #dfdfdf;
+}
+.region_map .popup_map .link_block > a:hover {
+  color: var(--main-color);
+}
+.region_map .popup_map .bottom_arrow {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

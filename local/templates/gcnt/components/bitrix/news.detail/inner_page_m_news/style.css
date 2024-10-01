@@ -1,0 +1,17 @@
+.news-detail{
+    /*margin-top: 20px;*/
+}
+.date-public{
+    color: #a0a0a0;
+    font: normal normal 16px/16px "Candara", sans-serif !important;
+}
+.news-date-time{
+    float: right;
+    margin-bottom: 20px;
+    color: var(--main-d-grey);
+    font: normal 700 18px/18px "Candara", sans-serif !important;
+}
+.detail_picture {
+    margin: auto;
+    display: block;
+}

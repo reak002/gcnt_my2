@@ -1,0 +1,89 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.news_wrapper{
+  width: var(--main-width);
+  .news_list{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px 20px;
+      list-style: none;
+      @media ($main_media_width) {
+        flex-wrap: wrap;
+      }
+      li{
+        list-style: none;
+        flex: 1 1 calc(100% / 3 - 40px);
+        max-width: calc(100% / 3 - 40px);
+        padding-bottom: 10px;
+        border-bottom: 1px solid #dfdfdf;
+        @media ($main_media_width) {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .block_title{
+    font: normal 700 44px/42px "Candara", sans-serif;
+    margin-bottom: 35px;
+  }
+
+  .one_new{
+    position: relative;
+    .visible_place{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      position: relative;
+      .img_wrapper{
+        position: relative;
+        > img.preview_picture{
+          max-width: 100%;
+          width: auto;
+          height: 200px;
+          max-height: 200px;
+          margin: auto;
+        }
+        > .type_list{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: calc(100% - 20px);
+          padding: 20px 10px;
+          gap: 10px;
+          flex-wrap: wrap-reverse;
+          .one_type{
+            flex: 1 1 calc(50% - 35px);
+            background: var(--main-color);
+            color: #fff;
+            padding: 0 15px;
+            font: normal normal 16px/21px "Candara", sans-serif;
+            text-transform: uppercase;
+            max-width: calc(50% - 35px);
+            min-width: calc(50% - 35px);
+          }
+        }
+      }
+      > .staff{
+        font: normal normal 16px/21px "Roboto", sans-serif;
+        color: var(--main-d-grey);
+        padding: 0 21px;
+        text-align: left;
+      }
+      > .name{
+        font: normal 700 21px/24px "Candara", sans-serif;
+        padding: 0 10px;
+        text-align: center;
+        min-height: 50px;
+      }
+    }
+  }
+}

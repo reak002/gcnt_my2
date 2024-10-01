@@ -1,0 +1,97 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.bx-breadcrumb{
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+  overflow: hidden;
+  @media ($main_media_width) {
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 10px auto auto;
+  }
+  .bx-breadcrumb-item{
+    a{
+      @media ($main_media_width) {
+        font: normal normal 20px/22px "Candara", sans-serif;
+      }
+    }
+    &.ar_bef {
+      position: relative;
+      overflow: hidden;
+      @media ($main_media_width) {
+        height: max-content;
+        display: flex;
+      }
+      &:before {
+        content: '/';
+        position: absolute;
+        font: normal normal 18px/23px "Candara", sans-serif;
+        display: inline-block;
+        padding: 0;
+        top: 5px;
+        @media ($main_media_width) {
+          top: 0;
+          font: normal normal 14px/18px "Candara", sans-serif;
+          color: #454545;
+        }
+      }
+      a{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 15px;
+        display: inline-block;
+        max-width: calc(100% - 15px);
+
+        span{
+          padding-left: 0;
+          max-width: 100%;
+        }
+      }
+      span{
+        padding-top: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 15px;
+        display: inline-block;
+        max-width: calc(100% - 15px);
+        @media ($main_media_width) {
+          padding-top: 0;
+        }
+      }
+    }
+    > span{
+      font: normal normal 18px/23px "Candara", sans-serif;
+      @media ($main_media_width) {
+        font: normal normal 14px/18px "Candara", sans-serif;
+      }
+      color: #454545;
+      opacity: 0.75;
+    }
+  }
+  a{
+    span{
+      font: normal normal 18px/23px "Candara", sans-serif;
+      @media ($main_media_width) {
+        font: normal normal 14px/18px "Candara", sans-serif;
+      }
+      color: #454545;
+      opacity: 0.85;
+    }
+    &:hover{
+      span{
+        opacity: 1;
+      }
+    }
+  }
+}
+@media ($main_media_width) {
+  #bx_breadcrumb_0 {
+    > a {
+      align-items: start;
+      display: flex;
+    }
+  }
+}

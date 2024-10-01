@@ -1,0 +1,15 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+%d-flex{
+  display: flex;
+}
+%d-flex-c-c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%d-flex-c-sb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

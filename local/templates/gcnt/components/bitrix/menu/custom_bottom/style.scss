@@ -1,0 +1,21 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.parent-root-wrapper{
+  @media ($main_media_width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .open_menu_akordeon{
+    display: none;
+    @media ($main_media_width) {
+      display: flex;
+      max-height: min-content;
+      align-items: flex-start;
+      &.open{
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,101 @@
+.bx-breadcrumb {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+@media (max-width: 1120px) {
+  .bx-breadcrumb {
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 10px auto auto;
+  }
+}
+@media (max-width: 1120px) {
+  .bx-breadcrumb .bx-breadcrumb-item a {
+    font: normal normal 20px/22px "Candara", sans-serif;
+  }
+}
+.bx-breadcrumb .bx-breadcrumb-item.ar_bef {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1120px) {
+  .bx-breadcrumb .bx-breadcrumb-item.ar_bef {
+    height: max-content;
+    display: flex;
+  }
+}
+.bx-breadcrumb .bx-breadcrumb-item.ar_bef:before {
+  content: "/";
+  position: absolute;
+  font: normal normal 18px/23px "Candara", sans-serif;
+  display: inline-block;
+  padding: 0;
+  top: 5px;
+}
+@media (max-width: 1120px) {
+  .bx-breadcrumb .bx-breadcrumb-item.ar_bef:before {
+    top: 0;
+    font: normal normal 14px/18px "Candara", sans-serif;
+    color: #454545;
+  }
+}
+.bx-breadcrumb .bx-breadcrumb-item.ar_bef a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 15px;
+  display: inline-block;
+  max-width: calc(100% - 15px);
+}
+.bx-breadcrumb .bx-breadcrumb-item.ar_bef a span {
+  padding-left: 0;
+  max-width: 100%;
+}
+.bx-breadcrumb .bx-breadcrumb-item.ar_bef span {
+  padding-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 15px;
+  display: inline-block;
+  max-width: calc(100% - 15px);
+}
+@media (max-width: 1120px) {
+  .bx-breadcrumb .bx-breadcrumb-item.ar_bef span {
+    padding-top: 0;
+  }
+}
+.bx-breadcrumb .bx-breadcrumb-item > span {
+  font: normal normal 18px/23px "Candara", sans-serif;
+  color: #454545;
+  opacity: 0.75;
+}
+@media (max-width: 1120px) {
+  .bx-breadcrumb .bx-breadcrumb-item > span {
+    font: normal normal 14px/18px "Candara", sans-serif;
+  }
+}
+.bx-breadcrumb a span {
+  font: normal normal 18px/23px "Candara", sans-serif;
+  color: #454545;
+  opacity: 0.85;
+}
+@media (max-width: 1120px) {
+  .bx-breadcrumb a span {
+    font: normal normal 14px/18px "Candara", sans-serif;
+  }
+}
+.bx-breadcrumb a:hover span {
+  opacity: 1;
+}
+
+@media (max-width: 1120px) {
+  #bx_breadcrumb_0 > a {
+    align-items: start;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

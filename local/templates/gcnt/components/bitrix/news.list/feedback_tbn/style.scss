@@ -1,0 +1,22 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.feedback_btn_list{
+  .inner_wrapper{
+    width: var(--main-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    @media ($main_media_width) {
+      flex-wrap: wrap;
+      width: calc(100vw - 40px);
+    }
+    > span{
+      flex: 1 1 25%;
+      @media ($main_media_width) {
+        flex: 1 1 100%;
+      }
+      text-align: center;
+    }
+  }
+}

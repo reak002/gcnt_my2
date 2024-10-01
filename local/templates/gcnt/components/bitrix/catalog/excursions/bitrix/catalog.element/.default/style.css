@@ -1,0 +1,17 @@
+@media (max-width: 1120px) {
+  video {
+    max-width: 95vw;
+  }
+
+  .detail_text_excursion {
+    text-align: justify;
+  }
+
+  .detail_text_excursion,
+.block_with_back_link {
+    width: 95vw;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

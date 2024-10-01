@@ -1,0 +1,89 @@
+form{
+  .form_inner{
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+    input,
+    textarea,
+    select{
+      padding: 20px;
+      font: normal normal 16px/20px "Roboto", sans-serif;
+      outline: none;
+      border: 1px solid #DFDFDF;
+      box-sizing: border-box;
+      &::placeholder{
+        font: normal normal 16px/20px "Roboto", sans-serif;
+        color: #000;
+      }
+    }
+    textarea{
+      height: 100%;
+    }
+    .l_block{
+      flex: 1 1 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .r_block{
+      flex: 1 1 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+      gap: 20px;
+    }
+  }
+  .control_block{
+    margin-top: 20px;
+    width: calc(70% - 13px);
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+    float: right;
+    .checkbox_container{
+      flex: 1 1 50%;
+      .custom-checkbox + label{
+        display: block;
+        text-align: left;
+        font: normal normal 14px/18px "Roboto", sans-serif;
+        a{
+          font: normal normal 14px/18px "Roboto", sans-serif;
+          color: #000;
+          text-decoration: underline;
+        }
+        span{
+          font: normal normal 14px/18px "Roboto", sans-serif;
+          padding-left: 23px;
+        }
+      }
+    }
+    .btn{
+      flex: 1 1 50%;
+    }
+  }
+}
+
+.btn{
+  &.resend{
+    display: block;
+    margin: 20px auto 0;
+    width: max-content;
+  }
+}
+
+.standard_page{
+  div{
+    &.msg_text {
+
+      text-align: center;
+      font: normal normal 25px/23px "Candara", sans-serif;
+      &.success{
+        color: var(--main-accent);
+      }
+      &.error{
+        color: var(--main-color);
+      }
+    }
+  }
+}

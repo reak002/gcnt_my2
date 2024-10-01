@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Candara';
+  src: local('Candara'),
+  url('../font/Candara.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: local('Candara Bold'),
+  url('../font/Candarab.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: local('Candara Italic'),
+  url('../font/Candarai.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Candara';
+  src: local('Candara Light'),
+  url('../font/Candaral.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Candara';
+  src: local('Candara Light Italic'),
+  url('../font/Candarali.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Candara';
+  src: local('Candara Bold Italic'),
+  url('../font/Candarali.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+  url('../font/Roboto_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

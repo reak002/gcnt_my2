@@ -1,0 +1,17 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+@media ($main_media_width) {
+  video{
+    max-width: 95vw;
+  }
+  .detail_text_excursion{
+    text-align: justify;
+  }
+  .detail_text_excursion,
+  .block_with_back_link{
+    width: 95vw;
+    margin: auto;
+  }
+}
+
+

@@ -1,0 +1,98 @@
+.accordion.section_list .section.open .section_body, .accordion.section_list .section .section_body .elements_list .element, .accordion.section_list .section, .accordion.section_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion.section_list {
+  gap: 5px;
+}
+.accordion.section_list .section {
+  background: rgba(31, 106, 116, 0.1);
+  transition: all 0.5s;
+}
+.accordion.section_list .section .section_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font: normal 700 21px/24px "Candara", sans-serif;
+  padding: 15px;
+}
+.accordion.section_list .section .section_name .action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion.section_list .section .section_name .action_btn > svg {
+  transition: all 0.3s;
+}
+.accordion.section_list .section .section_body {
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+.accordion.section_list .section .section_body .section_description {
+  font: normal normal 18px/27px "Roboto", sans-serif;
+}
+.accordion.section_list .section .section_body .elements_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.accordion.section_list .section .section_body .elements_list .element {
+  flex: 1 1 calc(50% - 10px);
+  font: normal normal 18px/27px "Roboto", sans-serif;
+  gap: 5px;
+}
+@media (max-width: 1120px) {
+  .accordion.section_list .section .section_body .elements_list .element {
+    flex: 1 1 100%;
+  }
+}
+.accordion.section_list .section .section_body .elements_list .element .element_name {
+  font-weight: bold;
+}
+.accordion.section_list .section .section_body .elements_list .element .element_genres {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.accordion.section_list .section .section_body .elements_list .element .element_genres .element_genre {
+  background: var(--main-color);
+  width: fit-content;
+  padding: 0 15px;
+  text-align: center;
+  color: #fff;
+}
+.accordion.section_list .section .section_body .elements_list .element .element_status {
+  background: var(--main-accent);
+  width: fit-content;
+  padding: 0 15px;
+  text-align: center;
+  color: #fff;
+}
+.accordion.section_list .section .section_body .elements_list .element .element_preview_text {
+  font-style: italic;
+}
+.accordion.section_list .section .section_body .elements_list .element .element_institution {
+  text-decoration: underline;
+}
+.accordion.section_list .section.open {
+  background: #fff;
+}
+.accordion.section_list .section.open .section_name {
+  color: var(--main-color);
+}
+.accordion.section_list .section.open .section_name .action_btn > svg {
+  transform: rotate(-45deg);
+}
+.accordion.section_list .section.open .section_name .action_btn > svg path {
+  fill: var(--main-color);
+}
+.accordion.section_list .section.open .section_body {
+  padding: 15px;
+  max-height: 50000px;
+  transition: max-height 0.5s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */

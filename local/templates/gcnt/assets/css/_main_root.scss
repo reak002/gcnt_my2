@@ -1,0 +1,11 @@
+:root{
+  --main-width: #{$main_width};
+  --main-color: #B11D48;
+  --main-accent: #2C7A84;
+  --main-d-grey: #454545;
+  --main-l-grey: #DFDFDF;
+  --free-space: calc((100vw - var(--main-width)) / 2);
+  @media ($main_media_width) {
+    --main-width: 95vw;
+  }
+}

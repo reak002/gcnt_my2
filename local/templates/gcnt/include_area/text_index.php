@@ -1,0 +1,1 @@
+<div id="tab_99" class="block active"><div class="text"><div style="text-align: center; font-size: 35px; color: #b11d48;"><br><br>2022 год объявлен Годом культурного наследия народов России</div></div></div>

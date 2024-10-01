@@ -1,0 +1,63 @@
+.yandex-share-panel.float_right {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+}
+@media (max-width: 1120px) {
+  .yandex-share-panel.float_right {
+    display: none;
+  }
+}
+.yandex-share-panel.float_right ul.ya-share2__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: #dfdfdf;
+  padding: 1px;
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item {
+  margin: 0;
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item > a > span.ya-share2__badge {
+  background: #fff;
+  border-radius: 0;
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item > a > span.ya-share2__badge > .ya-share2__icon {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_vkontakte a span.ya-share2__badge .ya-share2__icon {
+  background-size: 26px 15px;
+  background-image: url(assets/img/vk.svg);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_vkontakte a:hover span.ya-share2__badge {
+  background: var(--main-color);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_vkontakte a:hover span.ya-share2__badge .ya-share2__icon {
+  background-image: url(assets/img/vk_hover.svg);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_facebook a span.ya-share2__badge .ya-share2__icon {
+  background-size: 13px 27px;
+  background-image: url(assets/img/fb.svg);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_facebook a:hover span.ya-share2__badge {
+  background: var(--main-color);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_facebook a:hover span.ya-share2__badge .ya-share2__icon {
+  background-image: url(assets/img/fb_hover.svg);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_odnoklassniki a span.ya-share2__badge .ya-share2__icon {
+  background-size: 15px 24px;
+  background-image: url(assets/img/ok.svg);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_odnoklassniki a:hover span.ya-share2__badge {
+  background: var(--main-color);
+}
+.yandex-share-panel.float_right ul.ya-share2__list > li.ya-share2__item.ya-share2__item_service_odnoklassniki a:hover span.ya-share2__badge .ya-share2__icon {
+  background-image: url(assets/img/ok_hover.svg);
+}
+
+/*# sourceMappingURL=style.css.map */

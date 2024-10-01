@@ -1,0 +1,76 @@
+.custom_filter {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.custom_filter > * {
+  flex: 1 1 auto;
+}
+.custom_filter select {
+  padding: 20px;
+  font: normal normal 16px/20px "Roboto", sans-serif;
+  outline: none;
+  background: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  text-transform: uppercase;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  width: 100%;
+  moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5 8L0.669873 0.499999L9.33013 0.5L5 8Z' fill='%23fff'/%3e%3c/svg%3e");
+  background-repeat: no-repeat, repeat;
+  background-position: right 30px top 50%, 0 0;
+  background-size: 20px auto, 100%;
+  text-align-last: center;
+  font: normal 400 16px/15px "Candara", sans-serif;
+}
+.custom_filter select.no-select {
+  background: #fff;
+  color: var(--main-color);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5 8L0.669873 0.499999L9.33013 0.5L5 8Z' fill='%23B11D48'/%3e%3c/svg%3e");
+  background-repeat: no-repeat, repeat;
+  background-position: right 30px top 50%, 0 0;
+  background-size: 20px auto, 100%;
+}
+.custom_filter select option {
+  font: normal 400 16px/15px "Candara", sans-serif;
+  text-align: left;
+  background: #fff;
+  color: #000;
+}
+.custom_filter select option:first-child {
+  display: none;
+}
+@media (max-width: 1120px) {
+  .custom_filter {
+    flex-direction: column;
+  }
+  .custom_filter > * {
+    min-width: 100%;
+    border: 1px solid var(--main-color) !important;
+    border-top: none !important;
+  }
+}
+
+@media (max-width: 1120px) {
+  [name=arrFilter_form] {
+    gap: 0;
+  }
+}
+@media (max-width: 1120px) {
+  [name=arrFilter_form] .filter_element_list {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1120px) {
+  [name=arrFilter_form] .filter_element_list .filter_element {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

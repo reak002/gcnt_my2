@@ -1,0 +1,367 @@
+@charset "UTF-8";
+.standard_page form {
+  position: relative;
+}
+.standard_page form .form {
+  border: 1px solid #DFDFDF;
+  padding: 75px;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  width: calc(100% - (76px * 2));
+  display: block;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form {
+    padding: 25px;
+    width: calc(100% - (27px * 2));
+  }
+}
+.standard_page form .form:first-child {
+  position: unset;
+}
+.standard_page form .form:first-child .btn_pre {
+  opacity: 0;
+}
+.standard_page form .form[data-form-visible=true] {
+  opacity: 1;
+  transition: opacity 0.7s;
+  z-index: 10;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form[data-form-visible=true] {
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+}
+.standard_page form .form[data-form-visible=false] {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.standard_page form .form .top_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .top_line {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+}
+.standard_page form .form .top_line h3 {
+  font: normal 700 22px/24px "Candara", sans-serif;
+  padding-right: 50px;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .top_line h3 {
+    order: 2;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+.standard_page form .form .top_line .position {
+  height: 70px;
+  width: 70px;
+  min-width: 70px;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+  font: normal 700 22px/24px "Candara", sans-serif;
+  color: var(--main-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .top_line .position {
+    order: 1;
+  }
+}
+.standard_page form .form .sub_title {
+  width: calc(100% - 115px);
+  font: normal normal 16px/21px "Roboto", sans-serif;
+  color: var(--main-d-grey);
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .sub_title {
+    width: 100%;
+  }
+}
+.standard_page form .form .sub_title:not(:empty) {
+  margin-top: -20px;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .sub_title:not(:empty) {
+    margin-top: 0;
+  }
+}
+.standard_page form .form .prop_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  z-index: inherit;
+}
+.standard_page form .form .prop_list .input_wrapper {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  gap: 20px;
+  z-index: inherit;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .prop_list .input_wrapper {
+    flex-wrap: wrap;
+  }
+}
+.standard_page form .form .prop_list .input_wrapper > * {
+  flex: 1 1 30%;
+}
+.standard_page form .form .prop_list .input_wrapper label {
+  flex: 1 1 70%;
+  font: normal normal 20px/26px "Roboto", sans-serif;
+  color: var(--main-d-grey);
+  z-index: inherit;
+}
+.standard_page form .form .prop_list .input_wrapper[data-group=G_1] select,
+.standard_page form .form .prop_list .input_wrapper[data-group=G_1] input {
+  flex: 1 1 70%;
+}
+.standard_page form .form .prop_list .input_wrapper[data-group=G_1] label {
+  flex: 1 1 30%;
+}
+.standard_page form .form .prop_list .input_wrapper select,
+.standard_page form .form .prop_list .input_wrapper input {
+  z-index: inherit;
+  padding: 20px;
+  font: normal normal 18px/29px "Roboto", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #DFDFDF;
+  box-sizing: border-box;
+}
+.standard_page form .form .prop_list .input_wrapper select::placeholder,
+.standard_page form .form .prop_list .input_wrapper input::placeholder {
+  font: normal normal 18px/29px "Roboto", sans-serif;
+  color: rgba(var(--main-d-grey), 0.6);
+}
+.standard_page form .form .prop_list .input_wrapper input[type=date] {
+  position: relative;
+}
+.standard_page form .form .prop_list .input_wrapper input[type=date]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  cursor: pointer;
+  background: url("img/calendar.svg") no-repeat center;
+  background-repeat: no-repeat, repeat;
+  background-position: right 30px top 50%;
+  background-size: 20px auto, 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 30px;
+  width: calc(100% - 30px);
+  height: 100%;
+}
+.standard_page form .form .prop_list .input_wrapper input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+.standard_page form .form .prop_list .input_wrapper input[type=date][data-date-fill=empty]::-webkit-datetime-edit-text, .standard_page form .form .prop_list .input_wrapper input[type=date][data-date-fill=empty]::-webkit-datetime-edit-month-field, .standard_page form .form .prop_list .input_wrapper input[type=date][data-date-fill=empty]::-webkit-datetime-edit-day-field, .standard_page form .form .prop_list .input_wrapper input[type=date][data-date-fill=empty]::-webkit-datetime-edit-year-field {
+  color: transparent;
+  display: none;
+}
+.standard_page form .form .prop_list .input_wrapper input[type=date][data-date-fill=empty]:before {
+  font: normal normal 16px/20px "Roboto", sans-serif;
+  content: attr(placeholder);
+}
+.standard_page form .form .prop_list .input_wrapper input[type=date]::-webkit-datetime-edit-text, .standard_page form .form .prop_list .input_wrapper input[type=date]::-webkit-datetime-edit-month-field, .standard_page form .form .prop_list .input_wrapper input[type=date]::-webkit-datetime-edit-day-field, .standard_page form .form .prop_list .input_wrapper input[type=date]::-webkit-datetime-edit-year-field {
+  color: black;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list_flat {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .prop_list .input_wrapper .filter_element_list_flat {
+    flex-wrap: wrap;
+  }
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list_flat .filter_element_flat {
+  flex: 1 1 50%;
+  min-width: calc(50% - 15px);
+  max-width: calc(50% - 15px);
+}
+@media (max-width: 1120px) {
+  .standard_page form .form .prop_list .input_wrapper .filter_element_list_flat .filter_element_flat {
+    flex: 1 1 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list.rating_control .filter_element {
+  position: relative;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list.rating_control .filter_element input {
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list.rating_control .filter_element label {
+  z-index: 2;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list .filter_element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list .filter_element:last-child label {
+  border-right-width: 1px;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list .filter_element input {
+  display: none;
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list .filter_element input:checked ~ label {
+  background: var(--main-color);
+  color: #fff;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  border-left: 1px solid var(--main-color);
+}
+.standard_page form .form .prop_list .input_wrapper .filter_element_list .filter_element input ~ label {
+  height: 40px;
+  width: 40px;
+  max-height: 40px;
+  max-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 40px;
+  background: #fff;
+  color: var(--main-d-grey);
+  border: 1px solid #DFDFDF;
+  border-right-width: 0;
+  font: normal 700 14px/12px "Roboto", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox {
+  /* для элемента input c type="checkbox" */
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox + label {
+  /* для элемента label, связанного с .custom-checkbox */
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox + label::before {
+  /* создание в label псевдоэлемента before со следующими стилями */
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid var(--main-color);
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  /* стили при наведении курсора на checkbox */
+  border-color: var(--main-color);
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox:not(:disabled):active + label::before {
+  /* стили для активного чекбокса (при нажатии на него) */
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox:focus + label::before {
+  /* стили для чекбокса, находящегося в фокусе */
+  box-shadow: 0 0 0 0.2rem var(--main-color-50-tranperent);
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox:focus:not(:checked) + label::before {
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  border-color: var(--main-color);
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox:checked + label::before {
+  /* стили для чекбокса, находящегося в состоянии checked */
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.standard_page form .form .prop_list .input_wrapper .custom-checkbox:disabled + label::before {
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  background-color: #e9ecef;
+}
+.standard_page form .form .prop_list.col_2 {
+  flex-direction: row;
+}
+.standard_page form .form .prop_list.col_2 .custom_col.x_col_1 {
+  flex: 1 1 40%;
+}
+.standard_page form .form .prop_list.col_2 .custom_col.x_col_1 .filter_element_list_flat {
+  gap: 0;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.standard_page form .form .prop_list.col_2 .custom_col.x_col_1 .filter_element_list_flat .filter_element_flat {
+  flex: 1 1 100%;
+  padding: 19px 0;
+}
+.standard_page form .form .prop_list.col_2 .custom_col.x_col_2 {
+  flex: 1 1 60%;
+}
+.standard_page form .form .bottom_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  z-index: inherit;
+}
+.standard_page form .form .btn {
+  z-index: inherit;
+}
+.standard_page form .form .btn_pre, .standard_page form .form .btn_next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.standard_page form .form .btn_pre {
+  color: var(--main-d-grey);
+  border: 1px solid var(--main-d-grey);
+}
+.standard_page form .form .btn_pre svg path {
+  fill: var(--main-d-grey);
+}
+.standard_page form .form .btn_pre:hover {
+  color: #fff;
+}
+.standard_page form .form .btn_pre:hover svg path {
+  fill: #fff;
+}
+.standard_page form .form .btn_next:hover svg path {
+  fill: var(--main-color);
+}
+
+/*# sourceMappingURL=style.css.map */

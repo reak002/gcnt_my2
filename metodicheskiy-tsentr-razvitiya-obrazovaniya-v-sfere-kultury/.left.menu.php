@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Новости", 
+		"news/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Документы", 
+		"dokumenty.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Конкурсы", 
+		"/afisha/?arrFilter_pf%5BTYPE%5D=190&set_filter=Y", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Выставки", 
+		"/afisha/?arrFilter_pf%5BTYPE%5D=191&set_filter=Y", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Премии и стипендии", 
+		"premii-i-stipendii.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Методический фонд изобразительное искусство", 
+		"metodicheskiy-fond-izobrazitelnoe-iskusstvo.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Методический фонд музыкальное искусство", 
+		"metodicheskiy-fond-muzykalnoe-iskusstvo.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Образовательные организации в сфере культуры", 
+		"dopolnitelnoe-obrazovanie.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

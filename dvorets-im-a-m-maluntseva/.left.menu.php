@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Коллективы", 
+		"kollektivy.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Арт-пространство", 
+		"/afisha/?arrFilter_pf%5BTYPE%5D=191&set_filter=Y",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Центр культурного развития", 
+		"tsentr-kulturnogo-razvitiya/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Концерты и театрализованные представления", 
+		"/afisha/?arrFilter_pf%5BTYPE%5D=189&set_filter=Y",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Арт-кафе", 
+		"art-kafe.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+);
+?>

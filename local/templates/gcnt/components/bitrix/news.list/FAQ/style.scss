@@ -1,0 +1,44 @@
+$main_width : '1120px';
+$main_media_width : 'max-width: '$main_width;
+.faq-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 20px;
+  .question{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    @media ($main_media_width) {
+      flex-wrap: wrap;
+    }
+    .half_block{
+      flex: 1 1 calc(50% - 60px);
+      max-width: calc(50% - 60px);
+      padding: 30px;
+      @media ($main_media_width) {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      &.right{
+        background: #EAF2F3;
+      }
+      .title{
+        font: normal normal 14px/17px "Candara", sans-serif;
+        color: var(--main-d-grey);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .body{
+        font: normal normal 18px/23px "Roboto", sans-serif;
+        color: #000;
+        a{
+          font: normal normal 18px/23px "Roboto", sans-serif;
+        }
+      }
+    }
+  }
+}
